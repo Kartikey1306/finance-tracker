@@ -1,0 +1,90 @@
+# Personal Finance Tracker with Budgeting
+
+A comprehensive personal finance management application built with Next.js, React, and modern web technologies. Track expenses, set budgets, and gain insights into your spending patterns with an intuitive and responsive interface.
+
+![Finance Tracker Dashboard](https://via.placeholder.com/800x400/3b82f6/ffffff?text=Finance+Tracker+Dashboard)
+
+## ✨ Features
+
+### 📊 **Stage 1: Basic Transaction Tracking**
+- ✅ Add, edit, and delete transactions
+- ✅ Transaction list view with search and filtering
+- ✅ Monthly expenses bar chart
+- ✅ Form validation and error handling
+- ✅ Responsive design for all devices
+
+### 🏷️ **Stage 2: Categories & Analytics**
+- ✅ Predefined expense categories with icons
+- ✅ Category-wise pie chart visualization
+- ✅ Dashboard with summary cards
+- ✅ Category breakdown and spending analysis
+- ✅ Recent transactions overview
+
+### 💰 **Stage 3: Budgeting & Insights**
+- ✅ Set monthly category budgets
+- ✅ Budget vs actual comparison charts
+- ✅ Spending insights and recommendations
+- ✅ Budget progress tracking with visual indicators
+- ✅ Smart alerts for over/under budget scenarios
+- ✅ Budget utilization analytics
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- PostgreSQL database
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   \`\`\`bash
+   git clone 
+   cd personal-finance-tracker
+   \`\`\`
+
+2. **Install dependencies**
+   \`\`\`bash
+   npm install
+   # or
+   yarn install
+   \`\`\`
+
+3. **Set up environment variables**
+   \`\`\`bash
+   cp .env.example .env.local
+   \`\`\`
+   
+   Update `.env.local` with your database credentials:
+   \`\`\`env
+   DATABASE_URL="postgresql://username:password@localhost:5432/finance_tracker"
+   POSTGRES_URL="..."
+   POSTGRES_PRISMA_URL="..."
+   POSTGRES_URL_NO_SSL="..."
+   POSTGRES_URL_NON_POOLING="..."
+   POSTGRES_USER="..."
+   POSTGRES_HOST="..."
+   POSTGRES_PASSWORD="..."
+   POSTGRES_DATABASE="..."
+   \`\`\`
+
+4. **Initialize the database**
+   
+   Run the SQL scripts in order:
+   \`\`\`bash
+   # For Stage 3 (includes all features)
+   psql -d your_database < scripts/budgets-schema.sql
+   psql -d your_database < scripts/seed-budgets-data.sql
+   \`\`\`
+
+5. **Start the development server**
+   \`\`\`bash
+   npm run dev
+   # or
+   yarn dev
+   \`\`\`
+
+6. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000)
