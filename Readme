@@ -40,7 +40,7 @@ A comprehensive personal finance management application built with Next.js, Reac
 
 1. **Clone the repository**
    \`\`\`bash
-   git clone 
+   git clone https://github.com/Kartikey1306/finance-tracker
    cd personal-finance-tracker
    \`\`\`
 
