@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Budget Tracker with Insights",
   description: "Track expenses, set budgets, and get spending insights",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
